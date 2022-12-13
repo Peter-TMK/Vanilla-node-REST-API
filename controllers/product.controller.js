@@ -34,11 +34,11 @@ async function createProduct(req, res){
             price: '~300k Naira'
         }
         
-        const newProduct = Product.create(product)
+        const newProduct = await Product.create(product)
 
-        res.writeHead('201', { 'Content-Type': 'application/json' })
+        res.writeHead(201, { 'Content-Type': 'application/json' })
         return res.end(JSON.stringify(newProduct))
-        
+
     } catch(error){
         console.log(error)
     }
@@ -47,4 +47,5 @@ async function createProduct(req, res){
 module.exports = {
     getProducts,
     getProductById,
+    createProduct,
 }
