@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Peter-TMK/Vanilla-node-REST-API/issues"
   },
-  "homepage": "https://github.com/Peter-TMK/Vanilla-node-REST-API#readme"
+  "homepage": "https://github.com/Peter-TMK/Vanilla-node-REST-API#readme",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
 }
